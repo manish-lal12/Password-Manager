@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="loginStyles.css">
+</head>
+<body>
+    <nav>
+    <a href='index.html' class="nav-heading">AAM Secure</a>
+    </nav>
+    <div class="login-form-container">
+    <form>
+        <h2>Login</h2>
+        <label for="input-email">Email </label>
+        <input type="text" placeholder="Enter your email" id="input-email"/><br>
+        <label for="input-password">Password </label>
+        <input type="password" placeholder="Enter password" id="input-password"/><br>
+        <button type="submit" id="btn-login">Login</button>
+        <div class="sign-up-container">
+        <p>Don't have an account yet? <span><a href='register.html' id="link-signUp">Sign Up</a></span></p><br>
+        </div>
+        <p id="alert-Message"></p>
+    </form>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src ="loginScript.js"></script>
+</body>
+</html>

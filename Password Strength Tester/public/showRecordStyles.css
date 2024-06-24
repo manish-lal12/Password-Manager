@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+};
+
+body {
+    background-color: white;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    align-items: center;  /*cross-axis*/
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-heading {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+.show-record-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 80px;
+    height: 450px;
+    width: 400px;
+    border: 2px solid grey;
+    text-align: center;
+}
+
+form h2 {
+    margin: 20px 0 0 0;
+}
+#record-name {
+    height: 27px;
+    width: 250px;
+    padding: 3px;
+    margin: 20px 0 10px 0;
+}
+
+#record-password {
+    height: 27px;
+    width: 250px;
+    padding: 3px;
+    margin: 15px;
+}
+
+.form-button-container {
+
+    text-align: center;
+}
+
+#btn-update {
+    height: 40px;
+    width: 85px;
+    padding: 5px;
+    margin: 7px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(17, 173, 234);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#btn-delete {
+    height: 40px;
+    width: 85px;
+    padding: 5px;
+    margin: 7px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(17, 173, 234);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#update-success-message {
+    height: 40px;
+    padding: 5px;
+    margin: 40px 5px 5px 5px;
+    font-size: 1.2rem;
+    align-content: center;
+    color: white;
+    background-color: rgb(42, 226, 42);
+}
+
+#redirecting-message {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: rgb(14, 73, 211);
+}
+
+#deleted-success-message {
+    height: 40px;
+    padding: 5px;
+    margin: 35px 5px 5px 5px;
+    font-size: 1.2rem;
+    align-content: center;
+    color: white;
+    background-color: red;
+}

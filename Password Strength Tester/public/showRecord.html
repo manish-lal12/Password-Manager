@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Record</title>
+    <link rel="stylesheet" href="showRecordStyles.css">
+</head>
+<body>
+    <nav>
+        <a href="homePage.html" class="nav-heading">Password Manager</a>
+    </nav>
+<div class="show-record-container">
+    <form>
+        <h2>Details</h2>
+        <input type="text" id="record-id"></input><br>
+        <label for="record-name">Name</label>
+        <input type="text" id="record-name"><br>
+        <label for="record-password">Password</label>
+        <input type="text" id="record-password">
+    <div class="form-button-container">
+        <button type="submit" id="btn-update">Update</button>
+        <button type="submit" id="btn-delete">Delete</button>
+    </div>
+    <p id="alert-Message"></p>
+    </form>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="showRecord.js"></script>
+</body>
+</html>

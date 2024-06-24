@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    align-items: center;  /*cross-axis*/
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    margin: 50px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-heading {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin: 25px 0 0 20px;
+}
+
+
+.password-checkup-heading {
+    font-size: 1.2rem;
+    margin: 20px 0 0 20px;
+}
+
+p {
+    font-size: 1.05rem;
+    margin: 10px 0 30px 25px;
+}
+.record-table tr {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.arrow-cell .arrow-span {
+    margin-left: 30px;
+}
+
+#btn-strength-test {
+    height: 30px;
+    width: 200px;
+    padding: 10px 0 32px 0;
+    margin:  0 0 20px 20px;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    align-items: center;
+}
+
+#btn-strength-test span {
+    margin-left: 8px;
+}
+
+.password-records-container h2 {
+    font-size: 1.42rem;
+    margin: 20px 0 0 28px;
+}
+
+#btn-add-record {
+    height: 35px;
+    width: 80px;
+    padding: 6px 10px 30px 0; 
+    margin: 7px 0 0 50px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: rgb(17, 173, 234);
+    border-radius: 3px;
+    cursor: pointer;
+}
+ 
+#btn-add-record span {
+    margin-right: 5px;
+    font-size: 1.1rem;
+}
+
+.record-table {
+    margin: 12px 0 0 35px;
+    border-collapse: separate;
+}
+
+#record-table-body .single-row-data {
+    /* background-color: rgb(176, 171, 171); */
+    font-size: 1.3rem;
+    cursor: pointer
+}
+
+#record-table-body .single-row-data .arrow-cell {
+    border: none;
+}
+
+#record-table-body .single-row-data .arrow-span {
+    color: black;
+}
