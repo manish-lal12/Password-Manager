@@ -4,6 +4,7 @@ import PasswordTester from './pages/PasswordTester';
 import PassGen from './pages/PassGen';
 import HomePage from './pages/HomePage';
 import { Route, Routes } from 'react-router-dom';
+import About from './pages/About';
 
 function App() {
   return (
@@ -12,10 +13,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/password-generator" element={<PassGen />} />
         <Route path="/password-tester" element={<PasswordTester />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-      {/* <HomePage/> */}
-      {/* <PassGen/> */}
-      {/* <PasswordTester/> */}
     </>
   );
 }

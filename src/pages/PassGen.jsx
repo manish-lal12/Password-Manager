@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { CopyIcon } from 'lucide-react';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const lowercaseList = 'abcdefghijklmnopqrstuvwxyz';
 const uppercaseList = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -144,6 +145,7 @@ const PassGen = () => {
           </div>
         </div>
       </div>
+      <Footer />
       <ToastContainer />
     </>
   );

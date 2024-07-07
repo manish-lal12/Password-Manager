@@ -8,13 +8,14 @@ import {
   CardContent,
 } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function HomePage() {
   return (
     <>
       <Navbar />
-      <div className=" flex flex-col min-h-[100dvh] bg-background min-w-full">
-        <div className="w-full bg-indigo-600 py-32 rounded-2xl">
+      <div className="mt-20 flex flex-col min-h-[100dvh] bg-background min-w-full">
+        <div className="w-full bg-indigo-600 py-32 rounded-2xl shadow-2xl border-8 border-yellow-200">
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center text-center space-y-4">
               <h1 className="text-6xl font-bold text-yellow-400">
@@ -31,7 +32,7 @@ export default function HomePage() {
               </p>
               <Link
                 to="/password-tester"
-                className=" inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-6 py-4 text-md font-medium text-primary shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-lime-400"
+                className=" inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-6 py-4 text-md font-medium text-primary shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-lime-300"
               >
                 Test Password
               </Link>
@@ -39,16 +40,18 @@ export default function HomePage() {
           </div>
         </div>
         <main className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <Card className="bg-muted rounded-xl border-2 border-indigo-400 shadow-indigo-xl">
+          {/* <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"> */}
+          {/* New Div sec for only 2 cards */}
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2 w-full">
+            {/* <Card className="bg-muted rounded-xl border-2 border-indigo-400 shadow-indigo-xl">
               <CardHeader className="text-indigo-500">
                 <CardTitle>Password Manager</CardTitle>
                 <CardDescription>
                   Securely store and manage all your passwords in one
                   place.
                 </CardDescription>
-              </CardHeader>
-              <CardContent>
+              </CardHeader> */}
+              {/* <CardContent>
                 <div className="flex flex-col items-start space-y-4">
                   <LockIcon className="h-8 w-8 text-primary" />
                   <p className="text-muted-foreground">
@@ -62,8 +65,8 @@ export default function HomePage() {
                     Try it now
                   </Link>
                 </div>
-              </CardContent>
-            </Card>
+              </CardContent> */}
+            {/* </Card> */}
             <Card className="bg-muted rounded-xl border-2 border-indigo-400 shadow-indigo-xl">
               <CardHeader className="text-indigo-500">
                 <CardTitle>Password Generator</CardTitle>
@@ -87,7 +90,8 @@ export default function HomePage() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="bg-muted rounded-xl border-2 border-indigo-400 shadow-indigo-xl">
+            <Card className="
+            bg-muted rounded-xl border-2 border-indigo-400 shadow-indigo-xl">
               <CardHeader>
                 <CardTitle className="text-indigo-500">
                   Password Strength Tester
@@ -113,6 +117,7 @@ export default function HomePage() {
                 </div>
               </CardContent>
             </Card>
+            <Footer />
           </div>
         </main>
       </div>
