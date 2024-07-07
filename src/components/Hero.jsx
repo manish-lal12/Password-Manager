@@ -5,9 +5,18 @@ const Hero = () => {
     
   const [ pass, setPass ] = useState("");
   const testResult = zxcvbn(pass);
-  const crackTime = testResult.crack_times_display.offline_fast_hashing_1e10_per_second;
+  const crackTime = testResult.crack_times_display.offline_slow_hashing_1e4_per_second;
   // console.log(testResult);
-  
+  // const suggestion = () => {
+
+  // if(testResult.feedback.suggestions[0].length != 0){
+  //     console.log(testResult.feedback.suggestions[0].length )
+  //     return testResult.feedback.suggestions[0]
+  // } 
+  // else{
+  //   return "good"
+  // }
+  // }
   // const suggestion = () => {
   //   // testResult.feedback.suggestions[0]
   //   switch(testResult.score){
@@ -42,7 +51,7 @@ const Hero = () => {
       case 3:
         return 'Strong';
       case 4:
-        return 'Very Strong';
+        return 'Very `Strong';
       default:
         return '';
     }
@@ -95,14 +104,14 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* <div> */}
+        {/* <div>
           <br/>
-          {/* <br/> */}
-        {/* <p className="font-semibold text-gray-800 text-xl">Suggestion:</p>
+          <br/>
+        <p className="font-semibold text-gray-800 text-xl">Suggestion:</p>
         <p className="text-muted-foreground text-lg">
-        {suggestion} */}
-        {/* </p>
-        </div> */}
+        {suggestion}
+        </p>
+        </div>  */}
 
       </div>
     </div>

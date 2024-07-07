@@ -17,10 +17,6 @@ module.exports = {
       },
     },
     extend: {
-      boxShadow: {
-        "indigo-xl":
-          "0 10px 15px rgba(99, 102, 241, 0.3), 0 4px 6px rgba(99, 102, 241, 0.3)",
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -77,5 +73,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),require("daisyui")],
+  plugins: [require("tailwindcss-animate")],
 }
