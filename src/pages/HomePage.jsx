@@ -40,33 +40,33 @@ export default function HomePage() {
           </div>
         </div>
         <main className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
-          {/* <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"> */}
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {/* New Div sec for only 2 cards */}
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2 w-full">
-            {/* <Card className="bg-muted rounded-xl border-2 border-indigo-400 shadow-indigo-xl">
+          {/* <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2 w-full"> */}
+             <Card className="bg-muted rounded-xl border-2 border-indigo-400 shadow-indigo-xl">
               <CardHeader className="text-indigo-500">
                 <CardTitle>Password Manager</CardTitle>
                 <CardDescription>
                   Securely store and manage all your passwords in one
                   place.
                 </CardDescription>
-              </CardHeader> */}
-              {/* <CardContent>
+              </CardHeader> 
+              <CardContent>
                 <div className="flex flex-col items-start space-y-4">
                   <LockIcon className="h-8 w-8 text-primary" />
                   <p className="text-muted-foreground">
                     Never forget a password again. Our password
                     manager keeps your accounts safe and secure.
                   </p>
-                  <Link
-                    to="/"
+                  <a
+                    a href="http://localhost:5000/index.html" target="_blank"
                     className="inline-flex h-9 items-center justify-center rounded-md bg-indigo-500 px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   >
                     Try it now
-                  </Link>
+                  </a>
                 </div>
-              </CardContent> */}
-            {/* </Card> */}
+              </CardContent> 
+            </Card>
             <Card className="bg-muted rounded-xl border-2 border-indigo-400 shadow-indigo-xl">
               <CardHeader className="text-indigo-500">
                 <CardTitle>Password Generator</CardTitle>

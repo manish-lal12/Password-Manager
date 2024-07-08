@@ -7,29 +7,31 @@ const Hero = () => {
   const crackTime = testResult.crack_times_display.offline_slow_hashing_1e4_per_second;
 
   const rating = () => {
-    if(testResult.score){
-      switch (testResult.score) {
-        case 0:
-          return 'Weak';
+    const score = testResult.score + 1;
+    console.log(score);
+    if (!score) {
+            return '';
+    } else {
+      switch (score) {
         case 1:
-          return 'Medium';
+          return 'Very Weak';
         case 2:
-          return 'Good';
+          return 'Weak';
         case 3:
-          return 'Strong';
+          return 'Fair';
         case 4:
+          return 'Strong';
+        case 5:
           return 'Very Strong';
-        default:
+        // default:
+        //   return '';
+      }
     }
-    
-  }
-  else{
-    return ''
-  }
-}
+  };
 
   const crackStatus = () => {
-    if(testResult.score){
+        const score = testResult.score + 1;
+    if(score){
       return crackTime
     }
     else{

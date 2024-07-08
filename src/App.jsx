@@ -15,8 +15,12 @@ function App() {
         <Route path="/password-generator" element={<PassGen />} />
         <Route path="/password-tester" element={<PasswordTester />} />
         <Route path="/about" element={<About />} />
-        <Route path="/manager" element={<Manager />} />
-      </Routes>
+        {/* <Route path="/manager" element={
+          () => {
+            window.location.href = 'https://www.google.com';
+            return null;
+        }}/>      */}
+        </Routes>
     </>
   );
 }
