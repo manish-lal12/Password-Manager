@@ -4,57 +4,36 @@ import zxcvbn from 'zxcvbn';
 const Hero = () => {
   const [pass, setPass] = useState('');
   const testResult = zxcvbn(pass);
-  const crackTime =
-    testResult.crack_times_display
-      .offline_slow_hashing_1e4_per_second;
-  // console.log(testResult);
-  // const suggestion = () => {
-
-  // if(testResult.feedback.suggestions[0].length != 0){
-  //     console.log(testResult.feedback.suggestions[0].length )
-  //     return testResult.feedback.suggestions[0]
-  // }
-  // else{
-  //   return "good"
-  // }
-  // }
-  // const suggestion = () => {
-  //   // testResult.feedback.suggestions[0]
-  //   switch(testResult.score){
-  //     case 0:
-  //       return "Add another word or two. Uncommon words are better."
-
-  //     case 1:
-  //       return "Add another word or two. Uncommon words are better."
-
-  //     case 2:
-  //       return "Add another word or two. Uncommon words are better."
-
-  //     case 3:
-  //       return "Your password is secure and meets best practices"
-
-  //     case 4:
-  //       return "Your password is secure and meets best practices"
-
-  //     default:
-  //       return "Use a few words, avoid common phrases"
-  //   }
-  // }
+  const crackTime = testResult.crack_times_display.offline_slow_hashing_1e4_per_second;
 
   const rating = () => {
-    switch (testResult.score) {
-      case 0:
-        return 'Weak';
-      case 1:
-        return 'Medium';
-      case 2:
-        return 'Good';
-      case 3:
-        return 'Strong';
-      case 4:
-        return 'Very `Strong';
-      default:
-        return '';
+    if(testResult.score){
+      switch (testResult.score) {
+        case 0:
+          return 'Weak';
+        case 1:
+          return 'Medium';
+        case 2:
+          return 'Good';
+        case 3:
+          return 'Strong';
+        case 4:
+          return 'Very Strong';
+        default:
+    }
+    
+  }
+  else{
+    return ''
+  }
+}
+
+  const crackStatus = () => {
+    if(testResult.score){
+      return crackTime
+    }
+    else{
+      return ''
     }
   };
 
@@ -109,18 +88,10 @@ const Hero = () => {
               <p className="font-semibold text-gray-800">
                 Estimated time to crack:
               </p>
-              <p style={{ color: funcColor() }}>{crackTime}</p>
+              <p style={{ color: funcColor() }}>{crackStatus()}</p>
             </div>
           </div>
 
-          {/* <div>
-          <br/>
-          <br/>
-        <p className="font-semibold text-gray-800 text-xl">Suggestion:</p>
-        <p className="text-muted-foreground text-lg">
-        {suggestion}
-        </p>
-        </div>  */}
         </div>
       </div>
     </div>
