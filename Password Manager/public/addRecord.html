@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Record</title>
+    <link rel="stylesheet" href="addRecordStyles.css">
+</head>
+<body>
+    <nav>
+        <a href="homePage.html" class="nav-heading">Password Manager</a>
+    </nav>
+<div class="add-record-container">
+    <form>
+        <h2>Add Details</h2>
+        <label for="record-name">Name</label>
+        <input type="text" placeholder="Enter name" id="add-record-name"><br>
+        <label for="record-password">Password</label>
+        <input type="password" placeholder="Enter password" id="add-record-password">
+        <button id="btn-save">Save</button>
+    <p id="alert-Message"></p>
+    </form>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="addRecord.js"></script>
+</body>
+</html>

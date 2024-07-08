@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    align-items: center;  /*cross-axis*/
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 80px;
+}
+.register-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 80px;
+    height: 520px;
+    width: 400px;
+    border: 2px solid grey;
+    text-align: center;
+}
+
+form h2 {
+    margin: 15px 0 15px 0;
+}
+
+#register-input-name{
+    height: 27px;
+    width: 250px;
+    padding: 3px;
+    margin: 10px;
+}
+
+#register-input-email {
+    height: 27px;
+    width: 250px;
+    padding: 3px;
+    margin: 10px;
+}
+
+#register-input-password {
+    height: 27px;
+    width: 250px;
+    padding: 3px;
+    margin: 15px;
+}
+
+.register-button-container {
+    display: flex;
+    align-self: center;
+}
+
+#btn-register {
+    height: 43px;
+    width: 85px;
+    padding: 10px;
+    margin: 7px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(17, 173, 234);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 35px;
+}
+
+.email-registered-already-msg {
+    color: red;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.registered-success-msg {
+    height: 40px;
+    padding: 5px;
+    margin: 0 5px 5px 5px;
+    font-size: 1.2rem;
+    align-content: center;
+    color: white;
+    background-color: rgb(42, 226, 42);
+
+}
+
+.redirecting-msg {
+    color: blue;
+}

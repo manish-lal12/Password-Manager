@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homePageStyles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-heading">Vault</a>
+        <a href="http://localhost:5000/api/v1/auth/logout" id="logout-btn">Logout</a>
+    </nav>
+    <h1>Password Manager</h1>
+    <p>Welcome to the homepage of password manager. See, change or remove passwords you saved.</p>
+    <form class="password-strength-tester">
+        <h2 class="password-checkup-heading">Password Checkup</h2>
+        <p>Check strength of your passwords</p>
+        <button id="btn-strength-test">Go to Password Checkup  <span>&#62</span></button>
+    </form>
+
+    <div class="password-records-container">
+        <h2>Saved Passwords   <button id="btn-add-record"><span>&#43</span>Add</button> </h2>
+        <table class="record-table">
+            <thead>
+                <tr>
+                </tr>
+            </thead>
+            <tbody id="record-table-body">
+            </tbody>
+        </table>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="homePageScript.js"></script>
+</body>
+</html>
+
+<!--
+const addNameDOM = document.getElementById('add-record-name');
+const addPasswordDOM = document.getElementById('add-record-password');
+const addRecordButton = document.getElementById('btn-add-record');
+-->

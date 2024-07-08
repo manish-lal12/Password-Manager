@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+};
+
+body {
+    background-image: url('5172658.jpg');
+    background-size: cover; /* or contain, or 100% 100% depending on your needs */
+    background-position: center; /* or other values as needed */
+    background-repeat: no-repeat; /* to avoid repeating the image */
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /*cross-axis*/
+    margin: 0 0 50px 0;
+    border-bottom: 2px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin: 35px 0 50px 50px;
+}
+
+
+h2 {
+    font-size: 1.7rem;
+    text-align: start;
+    margin-left: 18px;
+}
+
+.intro-message {
+    margin-top: 45px;
+    font-size: 1.1rem;
+}
+
+#form-div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 90px;
+    height: 400px;
+    width: 1000px;
+    text-align: center;
+    background-color: rgb(55, 54, 54);
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+form h2 {
+    margin: 10px 0 10px 20px;
+}
+
+#password-input {
+    height: 55px;
+    width: 650px;
+    padding: 3px;
+    margin: 10px 0 10px 0;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+#btn-strength-test {
+    height: 38px;
+    width: 78px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(17, 173, 234);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.alert-Message {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.strength-indicator {
+    margin: 10px 0 0 40px;
+}
+
+.password-strength {
+    font-size: 1.2rem;
+}
+
+.estimated-time-indicator {
+    margin:10px 40px 0 0;
+}
+
+.estimated-time {
+    font-size: 1.2rem;
+}

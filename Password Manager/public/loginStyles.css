@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+};
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 80px;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    align-items: center;  /*cross-axis*/
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-heading {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 0 0;
+}
+
+form {
+    height: 450px;
+    width: 400px;
+    border: 2px solid grey;
+    text-align: center;
+}
+
+form h2 {
+    margin: 20px 0 15px 0;
+}
+#input-email {
+    height: 27px;
+    width: 250px;
+    padding: 3px;
+    margin: 10px;
+}
+
+#input-password {
+    height: 27px;
+    width: 250px;
+    padding: 3px;
+    margin: 15px;
+}
+
+.form-button-container {
+    display: flex;
+    align-self: center;
+}
+
+#btn-login {
+    height: 43px;
+    width: 85px;
+    padding: 10px;
+    margin: 7px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(17, 173, 234);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 42px;
+}
+
+#link-signUp {
+    text-decoration: none;
+    color: rgb(11, 149, 196)
+}
+
+.login-success-msg {
+    height: 40px;
+    padding: 5px;
+    margin: 0 5px 5px 5px;
+    font-size: 1.2rem;
+    align-content: center;
+    color: white;
+    background-color: rgb(42, 226, 42);
+}
+
+.invalid-credentials-msg {
+    color: red;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
