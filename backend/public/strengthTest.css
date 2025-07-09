@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url('bg_image.png');
+  background-size: cover; /* or contain, or 100% 100% depending on your needs */
+  background-position: center; /* or other values as needed */
+  height: 100vh;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*cross-axis*/
+  margin: 0 0 50px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin: 35px 0 50px 50px;
+}
+
+h2 {
+  font-size: 1.7rem;
+  text-align: start;
+  margin-left: 18px;
+  color: black;
+}
+
+.intro-message {
+  margin-top: 45px;
+  font-size: 1.1rem;
+  color: black;
+}
+
+#form-div-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 90px;
+  height: 400px;
+  width: 1000px;
+  padding: 20px 0 0 0;
+  text-align: center;
+  background-color: rgb(231, 229, 229);
+  border: 2px solid blue;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+}
+
+form h2 {
+  margin: 10px 0 10px 20px;
+}
+
+#password-input {
+  height: 55px;
+  width: 650px;
+  padding: 2px;
+  margin: 10px 0 10px 0px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+#password-input::placeholder {
+  margin-left: 10px;
+}
+#btn-strength-test {
+  height: 38px;
+  width: 78px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(17, 173, 234);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.alert-Message {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.strength-indicator {
+  margin: 10px 0 0 40px;
+}
+
+.password-strength {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.estimated-time-indicator {
+  margin: 10px 40px 0 0;
+}
+
+.estimated-time {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}

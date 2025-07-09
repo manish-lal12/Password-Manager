@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: white;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  align-items: center; /*cross-axis*/
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+.nav-heading {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin-left: 50px;
+}
+
+.add-record-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 100px;
+  height: 450px;
+  width: 400px;
+  border: 2px solid grey;
+  text-align: center;
+}
+
+form h2 {
+  margin: 10px 0 10px 0;
+}
+#add-record-name {
+  height: 27px;
+  width: 250px;
+  padding: 3px;
+  margin: 20px 0 10px 0;
+}
+
+#add-record-password {
+  height: 27px;
+  width: 250px;
+  padding: 3px;
+  margin: 15px;
+}
+
+#btn-save {
+  height: 40px;
+  width: 85px;
+  padding: 5px;
+  margin: 7px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: rgb(17, 173, 234);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.added-message {
+  height: 40px;
+  padding: 5px;
+  margin: 30px 5px 5px 5px;
+  font-size: 1.2rem;
+  align-content: center;
+  color: white;
+  background-color: rgb(42, 226, 42);
+}
+
+.redirecting-message {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: rgb(14, 73, 211);
+}
+
+.error-message {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: red;
+}

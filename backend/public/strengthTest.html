@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="strengthTest.css" />
+    <title>Strength Test</title>
+  </head>
+  <body
+    style="
+      background-image: url('bg_image.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    "
+  >
+    <nav>
+      <a href="index.html" class="nav-heading">Vault</a>
+    </nav>
+    <div id="form-div-container">
+      <form id="strength-test-container">
+        <h2>Password Strength Tester</h2>
+        <p class="intro-message">
+          Think you have a strong password? Find out below.
+        </p>
+        <input
+          type="text"
+          placeholder="Evaluate your password"
+          id="password-input"
+        /><br />
+        <div class="alert-Message">
+          <div class="strength-indicator">
+            <p class="password-strength">Your password strength:</p>
+            <p id="password-strength-message"></p>
+          </div>
+          <div class="estimated-time-indicator">
+            <p class="estimated-time">Estimated time to crack:</p>
+            <p id="estimated-time-message"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <p class="strength-message"></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="strengthTest.js"></script>
+  </body>
+</html>
